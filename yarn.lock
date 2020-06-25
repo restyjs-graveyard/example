@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@restyjs/core@^0.0.1-alpha.4":
-  version "0.0.1-alpha.4"
-  resolved "https://registry.yarnpkg.com/@restyjs/core/-/core-0.0.1-alpha.4.tgz#94c03fdb37070827102fe9646794d0a38b0bd63a"
-  integrity sha512-KjnZ9piyC4+phgd/nLI70pKdI1dc878E6PzGIn8UfEUgu/280bl2YleZbcI0aKoqqw/OCvgEhAq5wGaOiuZ7SQ==
+"@restyjs/core@^0.0.1-alpha.14":
+  version "0.0.1-alpha.14"
+  resolved "https://registry.yarnpkg.com/@restyjs/core/-/core-0.0.1-alpha.14.tgz#b6975e914da50b5b35496cccd18f92e614985aad"
+  integrity sha512-DKXn/+LgLDrNPI+ttTejv/RUGe/Q+vOfEg+QPhWfpU/P1BLVVEUY3sL+FV+pxysrWLtYWZI9DsXzq1jjsIKkPw==
   dependencies:
     "@types/body-parser" "^1.19.0"
     "@types/dotenv" "^8.2.0"
