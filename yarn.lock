@@ -2,20 +2,18 @@
 # yarn lockfile v1
 
 
-"@restyjs/core@^0.0.1-alpha.14":
-  version "0.0.1-alpha.14"
-  resolved "https://registry.yarnpkg.com/@restyjs/core/-/core-0.0.1-alpha.14.tgz#b6975e914da50b5b35496cccd18f92e614985aad"
-  integrity sha512-DKXn/+LgLDrNPI+ttTejv/RUGe/Q+vOfEg+QPhWfpU/P1BLVVEUY3sL+FV+pxysrWLtYWZI9DsXzq1jjsIKkPw==
+"@restyjs/core@^0.0.1-alpha.15":
+  version "0.0.1-alpha.15"
+  resolved "https://registry.yarnpkg.com/@restyjs/core/-/core-0.0.1-alpha.15.tgz#7de828d4dac718839d97fd2cb6a5c1c032ca0668"
+  integrity sha512-N1c1+MBhTsmrgP6cLqFOwDKHAXlDFrcV7JShSO6fs9JrI8SaQEYdZTQu3YHaWQPsN9H+55nOMY14c+f45yn8SA==
   dependencies:
     "@types/body-parser" "^1.19.0"
-    "@types/dotenv" "^8.2.0"
     "@types/express" "^4.17.6"
     "@types/node" "^14.0.14"
     "@types/reflect-metadata" "^0.1.0"
     body-parser "^1.19.0"
     class-transformer "^0.2.3"
     class-validator "^0.12.2"
-    dotenv "^8.2.0"
     express "^4.17.1"
     reflect-metadata "^0.1.13"
     typedi "^0.8.0"
@@ -34,13 +32,6 @@
   integrity sha512-2+FrkXY4zllzTNfJth7jOqEHC+enpLeGslEhpnTAkg21GkRrWV4SsAtqchtT4YS9/nODBU2/ZfsBY2X4J/dX7A==
   dependencies:
     "@types/node" "*"
-
-"@types/dotenv@^8.2.0":
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/@types/dotenv/-/dotenv-8.2.0.tgz#5cd64710c3c98e82d9d15844375a33bf1b45d053"
-  integrity sha512-ylSC9GhfRH7m1EUXBXofhgx4lUWmFeQDINW5oLuS+gxWdfUeW4zJdeVTYVkexEW+e2VUvlZR2kGnGGipAWR7kw==
-  dependencies:
-    dotenv "*"
 
 "@types/express-serve-static-core@*":
   version "4.17.7"
@@ -203,11 +194,6 @@ diff@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
-
-dotenv@*, dotenv@^8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
-  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
 ee-first@1.1.1:
   version "1.1.1"
