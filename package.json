@@ -1,12 +1,17 @@
 {
   "name": "examples",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/main.ts",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/main.ts"
+    "prestart:prod": "rimraf dist && yarn build",
+    "start:prod": "node dist/main.js",
+    "start": "nodemon",
+    "test": "jest",
+    "build": "tsc"
   },
   "devDependencies": {
+    "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
