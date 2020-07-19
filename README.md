@@ -1,1 +1,1 @@
-# resty-examples
+# resty.js example
