@@ -48,13 +48,10 @@
     express-jwt "^6.0.0"
     jsonwebtoken "^8.5.1"
 
-"@restyjs/typeorm@^0.0.1-alpha.21":
-  version "0.0.1-alpha.21"
-  resolved "https://registry.yarnpkg.com/@restyjs/typeorm/-/typeorm-0.0.1-alpha.21.tgz#b43296a91e972799d1046026e405522b7cd86f7d"
-  integrity sha512-/l6Mc1uz5qkIMeNz3EATaIbzN8ZYs4MHdIHtShIb0dEe2BYnJsKg0TBgHJti5imqrby2JUrzf2NprxaMh0HmJw==
-  dependencies:
-    typeorm "^0.2.25"
-    typeorm-typedi-extensions "^0.2.3"
+"@restyjs/typeorm@^0.0.1-alpha.22":
+  version "0.0.1-alpha.22"
+  resolved "https://registry.yarnpkg.com/@restyjs/typeorm/-/typeorm-0.0.1-alpha.22.tgz#096b9d5878e8da6a04b383c76c2721e7258a4189"
+  integrity sha512-lOEu0dw+QE6wCE8fO1Vy0TZmyTDBB55elT+dmBy8lsIwr0ZGEMSyvaw2ypS3SAAjfSQfmBABK920hCpN6ajWYg==
 
 "@types/body-parser@*", "@types/body-parser@^1.19.0":
   version "1.19.0"
@@ -1904,11 +1901,6 @@ typedi@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/typedi/-/typedi-0.8.0.tgz#d8e203bd1d41a96e2b0a5c6295147d74b2b2d03e"
   integrity sha512-/c7Bxnm6eh5kXx2I+mTuO+2OvoWni5+rXA3PhXwVWCtJRYmz3hMok5s1AKLzoDvNAZqj/Q/acGstN0ri5aQoOA==
-
-typeorm-typedi-extensions@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/typeorm-typedi-extensions/-/typeorm-typedi-extensions-0.2.3.tgz#94fca2656206d771bf6d2242f5aab570511188e8"
-  integrity sha512-T9i1NvRZNjPn9Jb8oT772ihfn6PwdqDVpzPCtKSqjkZGOgXrCkdyD3dDrzfMaoWJ1afU58bVx2CMb95FzT42Ow==
 
 typeorm@^0.2.25:
   version "0.2.25"
