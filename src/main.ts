@@ -1,21 +1,27 @@
-import resty, { Controller, Get, Context } from "@restyjs/core";
-import { TodoController } from "./todo";
-
-@Controller("/")
-class HelloController {
-  @Get("/")
-  index() {
-    return "Hello World";
-  }
-
-  @Get("/health")
-  health(ctx: Context) {
-    return ctx.res.json({ status: "ok" }).status(200);
-  }
-}
+import resty, {
+  NotFoundErrorHandler,
+  DefaultErrorHandler,
+} from "@restyjs/core";
+import { JWTConfiguration } from "@restyjs/jwt";
+import { AuthController } from "./controllers/AuthController";
+import { Database } from "@restyjs/typeorm";
+import { User } from "./models/User";
 
 const app = resty({
-  controllers: [HelloController, TodoController],
+  routePrefix: "/api",
+  controllers: [AuthController],
+  providers: [
+    JWTConfiguration("secret"),
+    Database({
+      type: "sqlite",
+      database: "example.db",
+      synchronize: true,
+      entities: [User],
+    }),
+  ],
+  postMiddlewares: [NotFoundErrorHandler, DefaultErrorHandler],
 });
 
-app.listen(8080);
+app.listen(8080, () => {
+  console.log("server is listening on port 8080");
+});
