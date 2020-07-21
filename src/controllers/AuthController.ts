@@ -6,12 +6,21 @@ import { InjectRepository } from "@restyjs/typeorm";
 import { hash, verify } from "@restyjs/argon2";
 import { JWTProvider } from "@restyjs/jwt";
 
+import { celebrate, Joi } from "celebrate";
+
 @Controller("/auth")
 export class AuthController {
   @Inject() jwtProvider!: JWTProvider;
   @InjectRepository(User) private readonly repository: Repository<User>;
 
-  @Post("/login")
+  @Post("/login", [
+    celebrate({
+      body: Joi.object({
+        email: Joi.string().trim().email().lowercase().required(),
+        password: Joi.string().min(8).max(30).required(),
+      }),
+    }),
+  ])
   async login(@Body() body: any) {
     const record = await this.repository.findOne({
       email: body.email,
@@ -48,7 +57,16 @@ export class AuthController {
     }
   }
 
-  @Post("/register")
+  @Post("/register", [
+    celebrate({
+      body: Joi.object({
+        firstName: Joi.string().min(2).max(254).required(),
+        lastName: Joi.string().min(2).max(254).required(),
+        email: Joi.string().trim().email().lowercase().required(),
+        password: Joi.string().min(8).max(30).required(),
+      }),
+    }),
+  ])
   async register(@Body() body: any) {
     const result = await hash(body.password);
     const record = await this.repository.save({

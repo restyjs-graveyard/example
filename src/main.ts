@@ -3,6 +3,7 @@ import resty, {
   DefaultErrorHandler,
 } from "@restyjs/core";
 import { JWTConfiguration } from "@restyjs/jwt";
+import { errors } from "celebrate";
 import { AuthController } from "./controllers/AuthController";
 import { Database } from "@restyjs/typeorm";
 import { User } from "./models/User";
@@ -19,7 +20,7 @@ const app = resty({
       entities: [User],
     }),
   ],
-  postMiddlewares: [NotFoundErrorHandler, DefaultErrorHandler],
+  postMiddlewares: [errors(), NotFoundErrorHandler, DefaultErrorHandler],
 });
 
 app.listen(8080, () => {
