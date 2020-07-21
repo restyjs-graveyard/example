@@ -3,9 +3,11 @@ import resty, {
   DefaultErrorHandler,
 } from "@restyjs/core";
 import { JWTConfiguration } from "@restyjs/jwt";
-import { errors } from "celebrate";
-import { AuthController } from "./controllers/AuthController";
 import { Database } from "@restyjs/typeorm";
+
+import { errors } from "celebrate";
+
+import { AuthController } from "./controllers/AuthController";
 import { User } from "./models/User";
 
 const app = resty({

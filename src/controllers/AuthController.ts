@@ -1,12 +1,12 @@
 import { Controller, Post, Body, Inject, HTTPError } from "@restyjs/core";
-import { Repository } from "typeorm";
-import { User } from "../models/User";
-
 import { InjectRepository } from "@restyjs/typeorm";
 import { hash, verify } from "@restyjs/argon2";
 import { JWTProvider } from "@restyjs/jwt";
 
+import { Repository } from "typeorm";
 import { celebrate, Joi } from "celebrate";
+
+import { User } from "../models/User";
 
 @Controller("/auth")
 export class AuthController {
