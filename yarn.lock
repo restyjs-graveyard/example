@@ -554,10 +554,10 @@
     reflect-metadata "^0.1.13"
     typedi "^0.8.0"
 
-"@restyjs/jwt@^0.0.1-alpha.20":
-  version "0.0.1-alpha.20"
-  resolved "https://registry.yarnpkg.com/@restyjs/jwt/-/jwt-0.0.1-alpha.20.tgz#75e0a7811fcc6f43f0e044d96f92c21333c37f27"
-  integrity sha512-52zHtxs8VGqYLW7ytaSInC9v1j2CUGqQmYXwQC6mWMkdfYvEKE7JQT/00Abv8oYvDQQu4dKZ+yrOGCongqaybQ==
+"@restyjs/jwt@^0.0.1-alpha.21":
+  version "0.0.1-alpha.21"
+  resolved "https://registry.yarnpkg.com/@restyjs/jwt/-/jwt-0.0.1-alpha.21.tgz#4df146c8ca8d7a6f3d7bf513d7349e4df2b52a11"
+  integrity sha512-mirSsVZ5C9gMdsG+Kg/WH7yqKnEXYGLMBzbqSkjHMI4QTN+4fHCzXUbrvHxoHpvESNouZY6Rupc+ZJMY0NhrQg==
   dependencies:
     "@types/express-jwt" "^0.0.42"
     "@types/jsonwebtoken" "^8.5.0"
