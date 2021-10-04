@@ -29,7 +29,7 @@
     "celebrate": "^13.0.4",
     "joi": "^17.4.0",
     "sqlite3": "^5.0.2",
-    "typeorm": "^0.2.31"
+    "typeorm": "^0.2.38"
   },
   "jest": {
     "preset": "ts-jest",
